@@ -112,6 +112,33 @@ justify-content:flex-end;
    border-bottom: 0.2rem solid #77a1a6;
 width: 3rem;
 }
+#services .card{
+      
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 2rem;  
+}
+#services .card::after {
+    content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: #77a1a69d;
+  opacity: 0.5;
+  transition: all 2s;
+
+}
+ 
+ 
+#services .card:hover::after{
+ opacity: 1;
+  width: 0;
+   transform: translate(-50%, 90%);
+}
 
  /*!--------------- SECTION-Customers --------------------->*/
  
@@ -187,6 +214,8 @@ border-radius: 50%;
   width: 0;
    transform: translate(-50%, 90%);
 }
+
+/**--------- h5 yazi kismi------------------------**/
 
 .card h5 {
     position: absolute;
